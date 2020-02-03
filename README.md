@@ -1,5 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## 手順
+
+### Create React App用の[Polyfill](https://www.npmjs.com/package/react-app-polyfill)を追加
+
+src/index.js
+```javascript
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
+```
+
+### Polyfill.ioからPolyfillを追加
+public/index.html
+
+```
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2Cdefault%2Ces2016%2CObject.entries"></script>
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
