@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import DefaultModal from './components/Modal'
 import './App.css';
 
+const clickButton = () => {
+  throw new Error('Test Error')
+}
+
 function App() {
   return (
     <div className="App">
@@ -11,6 +15,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <div className="button" onClick={clickButton}>Error</div>
         <DefaultModal />
         <a
           className="App-link"

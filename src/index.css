@@ -45,3 +45,15 @@ code {
     border: none;
     background-color: transparent;
   }
+
+.button {
+  width: 80px;
+  height: 50px;
+  color: red;
+  background: white;
+  border: white;
+  border-radius: 5px;
+  line-height: 50px;
+  font-size: 10px;
+  cursor: pointer;
+}
